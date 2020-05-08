@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_20"
+    android:padding="10dp"
+    tools:context=".fragments.HomeFragment">
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:baselineAligned="false">
+
+        <RelativeLayout
+            android:id="@+id/groceries"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:elevation="10dp"
+            android:background="@drawable/rounded_layout"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:id="@+id/imgG"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:src="@drawable/grocery"
+                android:contentDescription="@string/groceries" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgG"
+                android:layout_centerHorizontal="true"
+                android:text="@string/groceries"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/medicine"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:elevation="10dp"
+            android:background="@drawable/rounded_layout"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imgM"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:src="@drawable/medicine"
+                android:contentDescription="@string/medicines" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgM"
+                android:layout_centerHorizontal="true"
+                android:text="@string/medicines"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/stationary"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:elevation="10dp"
+        android:background="@drawable/rounded_layout"
+        android:layout_below="@+id/ll">
+
+        <ImageView
+            android:id="@+id/imgS"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:src="@drawable/stationary"
+            android:contentDescription="@string/stationary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgS"
+            android:layout_centerHorizontal="true"
+            android:text="@string/stationary"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
